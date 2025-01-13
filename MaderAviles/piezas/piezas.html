@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaderAvilés</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestión de piezas</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Principal</a></li>
+      <li><a href="/pedidos/pedidos.html">Gestión de pedidos</a></li>
+      <li><a href="/detalle/detalleDePedido.html">Detalle de pedido</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Piezas</h2>
+    <form id="formPieza">
+      <ul>
+        <li>
+          <label for="numeroPieza">Número de Pieza:</label>
+          <input type="number" id="numeroPieza" name="numeroPieza" min="1" required> 
+        </li>
+        <li>
+          <label for="numeroPedido">Número de Pedido:</label>
+          <input type="number" id="numeroPedido" name="numeroPedido" min="1" required>
+        </li>
+        <li>
+          <label for="largo">Largo (cm):</label>
+          <input type="number" id="largo" name="largo" min="0.01" step="0.01" required>
+        </li>
+        <li>
+          <label for="ancho">Ancho (cm):</label>
+          <input type="number" id="ancho" name="ancho" min="0.01" step="0.01" required>
+        </li>
+        <li>
+          <label for="grosor">Grosor (cm):</label>
+          <input type="number" id="grosor" name="grosor" min="0.01" step="0.01" required>
+        </li>      
+        <li>
+          <label for="color">Color:</label>
+            <select id="color" name="color">
+              <option value="Natural">Natural</option>
+              <option value="Blanco">Blanco</option>
+              <option value="Negro">Negro</option>
+              <option value="Marrón">Marrón</option>
+              <option value="Nogal">Nogal</option>
+              <option value="Wengue">Wengué</option>
+              <option value="Sapelly">Sapelly</option>
+            </select>
+        </li>
+        <li>
+          <label for="ambasCaras">Chapeado en ambas caras:</label>
+          <input type="checkbox" id="ambasCaras" name="ambasCaras">
+        </li>
+        <li>
+          <button type="submit">Añadir Pieza</button>
+        </li>
+      </ul>      
+    </form>
+  </section>
+  <script src="js/piezas.js"></script>
+</body>
+</html>

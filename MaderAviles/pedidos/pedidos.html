@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaderAvilés</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestión de pedidos</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Principal</a></li>
+      <li><a href="/piezas/piezas.html">Gestión de piezas</a></li>
+      <li><a href="/detalle/detalleDePedido.html">Detalle de pedido</a></li>
+    </ul>
+  </nav>
+  <form id="formPedido">
+    <input type="number" id="numeroPedido" placeholder="Número de Pedido" required>
+    <input type="text" id="cliente" placeholder="Nombre del Cliente" required>
+    <input type="date" id="fechaPedido" required>
+    <button type="submit">Añadir Pedido</button>
+  </form>
+
+    <h2>Pedidos realizados</h2>
+    <table id="tablaPedidos">
+        <thead>
+            <tr>
+                <th>Número de Pedido</th>
+                <th>Cliente</th>
+                <th>Fecha</th>
+                <th>Procesado</th>
+                <th>Servido</th>
+            </tr>
+        </thead>
+    </table>
+
+  <script src="js/pedidos.js"></script>
+</body>
+</html>
