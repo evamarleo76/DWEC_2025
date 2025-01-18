@@ -1,0 +1,86 @@
+/* styles.css */
+
+
+/*Estilo para el cuerpo de la página*/
+
+/*font-family: Arial, sans-serif;:fuente de texto Arial, con una fuente de respaldo sans-serif.
+margin: 20px;: Añade un margen de 20 píxeles alrededor del cuerpo de la página.
+background-color: #f4f4f4;: Establece el color de fondo de la página a un gris claro.*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+/*Estilo para el contenedor principal*/
+
+/*max-width: 600px;: Establece un ancho máximo de 600 píxeles para el contenedor.
+margin: auto;: Centra el contenedor horizontalmente.
+background-color: #fff;: Establece el color de fondo del contenedor a blanco.
+padding: 20px;: Añade un relleno de 20 píxeles dentro del contenedor.
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);: Añade una sombra alrededor del contenedor.
+border-radius: 8px;: Redondea las esquinas del contenedor con un radio de 8 píxeles*/
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/*Estilo para los encabezados h1 y h2*/
+
+/*color: #333;: Establece el color del texto de los encabezados a un gris oscuro*/
+
+h1, h2 {
+    color: #333;
+}
+
+/*Estilo para los campos de entrada de texto y número*/
+
+/*width: 100%;: Establece el ancho de los campos de entrada al 100% del contenedor.
+padding: 10px;: Añade un relleno de 10 píxeles dentro de los campos de entrada.
+margin: 5px 0;: Añade un margen de 5 píxeles arriba y abajo de los campos de entrada.
+border: 1px solid #ccc;: Establece un borde de 1 píxel de color gris claro alrededor de los campos de entrada.
+border-radius: 4px;: Redondea las esquinas de los campos de entrada con un radio de 4 píxeles.*/
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*Estilo para los botones*/
+
+/*padding: 10px;: Añade un relleno de 10 píxeles dentro de los botones.
+margin: 5px 0;: Añade un margen de 5 píxeles arriba y abajo de los botones.
+width: 100%;: Establece el ancho de los botones al 100% del contenedor.
+background-color: #007bff;: Establece el color de fondo de los botones a un azul.
+color: #fff;: Establece el color del texto de los botones a blanco.
+border: none;: Elimina el borde de los botones.
+border-radius: 4px;: Redondea las esquinas de los botones con un radio de 4 píxeles.
+cursor: pointer;: Cambia el cursor a una mano cuando se pasa sobre los botones.*/
+
+button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Estilo para los botones cuando el cursor pasa sobre ellos*/
+
+/*background-color: #0056b3;: Cambia el color de fondo de los botones a un azul más oscuro cuando el cursor pasa sobre ellos.*/
+button:hover {
+    background-color: #0056b3;
+}
+
